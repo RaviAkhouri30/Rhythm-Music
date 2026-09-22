@@ -1,28 +1,57 @@
-# Angular specific
+# Dependencies
+/node_modules/
+
+# Build and test output
 /dist/
 /out-tsc/
 /tmp/
 /coverage/
+/bazel-out/
 /e2e/test-output/
+
+# Angular tooling
 /.angular/
-.angular/
-
-# Node modules and dependency files
-/node_modules/
-/package-lock.json
-/yarn.lock
-
-# Environment files
-/.env
-
-# Angular CLI and build artefacts
-/.angular-cli.json
 /.ng/
+/.angular-cli.json
 
-# TypeScript cache
+# Environment-specific settings
+/.env
+/.env.*
+!/.env.example
+
+# TypeScript build cache
 *.tsbuildinfo
 
 # Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+
+# Editors and IDEs
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/mcp.json
+.history/
+
+# Miscellaneous caches and generated files
+.sass-cache/
+/connect.lock
+/libpeerconnection.log
+testem.log
+/typings/
+/__screenshots__/
+
+# Operating-system files
+.DS_Store
+Thumbs.db
